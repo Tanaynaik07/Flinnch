@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Founder's Diary – Demo Screens</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#16151c;--side:#1a1921;--card:#1e1d27;--line:#2c2b38;--tx:#ece9f2;--mut:#8d8a9c;--acc:#e08a3c;--grn:#6fae5a;--yel:#e0b73c;--red:#e2624f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{display:flex;min-height:100vh}
+nav{width:240px;background:var(--side);border-right:1px solid var(--line);padding:22px 14px;flex-shrink:0}
+nav h1{font-size:19px;color:var(--acc);margin:0 0 22px 8px}
+nav a{display:block;padding:8px 12px;margin-bottom:3px;border-radius:8px;color:var(--mut);cursor:pointer}
+nav a.on{background:#4a3320;color:var(--tx);border:1px solid #6a4a2c}
+nav .lbl{font-size:12px;color:var(--mut);margin:22px 0 8px 8px}
+nav .pj{padding:6px 8px;display:flex;gap:8px;align-items:center;font-size:14px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0}
+main{flex:1;padding:0 36px 40px;min-width:0}
+.top{display:flex;justify-content:flex-end;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);margin:0 -36px 30px;padding-right:36px;color:var(--mut)}
+.top span.b{border:1px solid var(--line);border-radius:8px;padding:5px 12px;color:var(--tx);font-size:13px}
+h2{font-size:28px;margin:0 0 22px}
+h3{margin:0 0 14px;font-size:18px}
+.grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.focus{background:linear-gradient(135deg,#3b2a1d,#231d1c);min-height:230px}
+.focus small{color:var(--acc);font-weight:600}
+.focus p{font-size:26px;font-weight:700;margin:8px 0 6px}
+.focus em{color:var(--mut);font-style:normal}
+ul.t{list-style:none;padding:0;margin:0}
+ul.t li{padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:14px}
+ul.t li:last-child{border:0}
+ul.t i{font-style:normal;color:var(--mut);font-size:13px;white-space:nowrap}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;max-width:calc(66% - 9px)}
+.bar{height:6px;background:var(--line);border-radius:4px;margin-top:6px}
+.bar b{display:block;height:100%;background:var(--grn);border-radius:4px}
+.sn{display:flex;justify-content:space-between;padding:8px 0;font-size:14px}
+.form{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end}
+.form label{display:block;font-size:13px;color:var(--mut);margin-bottom:6px}
+.in{background:#15141b;border:1px solid var(--line);border-radius:8px;padding:9px 12px;min-width:220px;color:var(--mut);font-size:14px}
+.btn{background:var(--acc);color:#1a1209;border-radius:8px;padding:9px 20px;font-weight:600}
+.notes{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px}
+.note{width:290px;padding:18px;border-radius:4px;color:#2b2410;box-shadow:0 8px 18px rgba(0,0,0,.35);transform:rotate(-1.2deg);font-size:14px}
+.note:nth-child(2){transform:rotate(1deg)}
+.note h4{margin:0 0 8px;font-size:16px}
+.tag{display:inline-block;background:rgba(0,0,0,.12);border-radius:10px;padding:1px 9px;font-size:12px;margin-top:8px;margin-right:4px}
+.y{background:#e0c24f}.o{background:#e3903f}.g{background:#93b872}
+.note small{display:block;opacity:.65;margin-bottom:6px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding:8px 0 8px 26px}
+.ev{position:relative;padding:12px 0}
+.ev:before{content:"";position:absolute;left:-33px;top:19px;width:10px;height:10px;border-radius:50%;background:var(--c)}
+.ev small{color:var(--mut);display:block;font-size:12px}
+.pill{display:inline-block;border:1px solid var(--c);color:var(--c);border-radius:8px;padding:0 9px;font-size:12px;margin-right:8px}
+@media(max-width:900px){.app{flex-direction:column}nav{width:100%}.grid,.row2{grid-template-columns:1fr;max-width:none}main{padding:0 18px 30px}.top{margin:0 -18px 24px;padding-right:18px}}
+</style>
+</head>
+<body>
+<div class="app">
+<nav>
+<h1>Founder's Diary</h1>
+<div id="menu"></div>
+<div class="lbl">PROJECTS &nbsp;<span style="color:var(--grn)">● 2</span> <span style="color:var(--yel)">● 1</span> <span style="color:var(--red)">● 0</span></div>
+<div class="pj"><span class="dot" style="background:var(--grn)"></span>Portfolio Website Redesign</div>
+<div class="pj"><span class="dot" style="background:var(--grn)"></span>Title &amp; Thumbnail Analyzer</div>
+<div class="pj"><span class="dot" style="background:var(--yel)"></span>Short-Form Content Engine</div>
+</nav>
+<main>
+<div class="top">Tanay Naik <span class="b">Sign out</span></div>
+<div id="view"></div>
+</main>
+</div>
+<script>
+const pages={
+dashboard:{n:"Dashboard",h:`<h2>Dashboard</h2>
+<div class="grid">
+<div class="card focus"><small>Current focus</small><p>Portfolio Website Redesign</p><em>Migrating from a hard-coded site to a managed, CMS-style portfolio.</em></div>
+<div class="card"><h3>Today's goals</h3><ul class="t"><li>Finalize case study copy<i>Portfolio</i></li><li>Deploy v2 to GitHub Pages<i>Portfolio</i></li><li>Set up 301 redirects<i>Portfolio</i></li></ul></div>
+<div class="card"><h3>Upcoming</h3><ul class="t"><li>Analyzer prototype demo<i>2 Oct</i></li><li>Weekly review<i>4 Oct</i></li><li>Publish case study<i>7 Oct</i></li></ul></div>
+</div>
+<div class="row2">
+<div class="card"><h3>Streaks</h3><div class="sn"><span>Daily journaling</span><b>14 days</b></div><div class="bar"><b style="width:70%"></b></div><div class="sn" style="margin-top:10px"><span>Coding</span><b>9 days</b></div><div class="bar"><b style="width:45%"></b></div></div>
+<div class="card"><h3>Projects</h3><div class="sn"><span><span class="dot" style="background:var(--grn)"></span> Active</span><b>2</b></div><div class="sn"><span><span class="dot" style="background:var(--yel)"></span> Planning</span><b>1</b></div><div class="sn"><span><span class="dot" style="background:var(--red)"></span> Archived</span><b>0</b></div></div>
+</div>`},
+knowledge:{n:"Knowledge Vault",h:`<h2>Knowledge Vault</h2>
+<div class="card"><div class="form"><div><label>Title</label><div class="in">e.g. Pricing experiments</div></div><div><label>Category</label><div class="in">Strategy</div></div><div><label>Notes</label><div class="in" style="min-height:64px">Key takeaways…</div></div><div><label>Tags</label><div class="in">strategy, validation</div></div></div><div class="btn" style="display:inline-block;margin-top:18px">Add</div></div>
+<div class="notes">
+<div class="note y"><h4>Wizard of Oz MVP strategy</h4>Validate demand before building the product. Launch a simple landing page, recruit beta sign-ups, and deliver the service manually. Measure retention before automating anything.<br><span class="tag">#strategy</span><span class="tag">#validation</span></div>
+<div class="note g"><h4>Customer discovery questions</h4>Ask about past behavior, not future intent. Focus on the last time the problem occurred and what they did about it.<br><span class="tag">#research</span></div>
+<div class="note o"><h4>Gap analysis framework</h4>Compare existing tools on price, workflow friction, and missing features to find under-served segments.<br><span class="tag">#market</span></div>
+</div>`},
+log:{n:"Activity Log",h:`<h2>Activity Log</h2>
+<div class="card"><div class="tl">
+<div class="ev" style="--c:var(--yel)"><small>13 Jul, 6:21 pm</small><span class="pill" style="--c:var(--yel)">Updated</span>Project: Portfolio Website Redesign</div>
+<div class="ev" style="--c:var(--yel)"><small>13 Jul, 6:20 pm</small><span class="pill" style="--c:var(--yel)">Updated</span>Project: Title &amp; Thumbnail Analyzer</div>
+<div class="ev" style="--c:var(--grn)"><small>13 Jul, 6:20 pm</small><span class="pill" style="--c:var(--grn)">Created</span>Startup Playbook: Market gap analysis</div>
+<div class="ev" style="--c:var(--grn)"><small>6 Jul, 9:32 pm</small><span class="pill" style="--c:var(--grn)">Created</span>Journal: Published first Reel and YouTube Short; tracking early results</div>
+<div class="ev" style="--c:var(--grn)"><small>2 Jul, 10:50 pm</small><span class="pill" style="--c:var(--grn)">Created</span>Journal: Portfolio site v2 is live; redirecting the old domain tomorrow</div>
+<div class="ev" style="--c:var(--grn)"><small>2 Jul, 1:21 pm</small><span class="pill" style="--c:var(--grn)">Created</span>Goal: Migrate portfolio to a managed content system <span style="color:var(--mut)">· Portfolio Website Redesign</span></div>
+<div class="ev" style="--c:var(--grn)"><small>1 Jul, 6:21 pm</small><span class="pill" style="--c:var(--grn)">Created</span>Knowledge Vault: Wizard of Oz MVP strategy</div>
+</div></div>`},
+journal:{n:"Daily Journal",h:`<h2>Daily Journal</h2>
+<div class="card"><div class="form"><div><label>Date</label><div class="in">28-09-2026</div></div><div><label>Entry</label><div class="in" style="min-height:74px;width:300px">Summarize progress, blockers, and next steps…</div></div><div><label>Linked projects (optional)</label><div class="in" style="min-height:74px;color:var(--tx)">Portfolio Website Redesign<br>Title &amp; Thumbnail Analyzer</div></div></div><div class="btn" style="display:inline-block;margin-top:18px">Save entry</div></div>
+<div class="notes">
+<div class="note y"><small>2026-07-06</small>Published our first Reel and YouTube Short today. Now tracking views and retention over the next week to see what resonates. Keeping the plan simple and consistent.</div>
+<div class="note o"><small>2026-07-02</small>Portfolio site v2 is live. Tomorrow I'll redirect the old domain to the new one so existing documents keep working.<br><span class="tag">Portfolio Website Redesign</span></div>
+<div class="note g"><small>2026-07-01</small>Explored the Title &amp; Thumbnail Analyzer idea. Several free tools already cover it, so I'm narrowing scope. Next I'll prototype Reels and Shorts analysis with computer vision, aiming to avoid heavy LLM usage.<br><span class="tag">Title &amp; Thumbnail Analyzer</span></div>
+</div>`}
+};
+const menu=document.getElementById('menu'),view=document.getElementById('view');
+const items=[["dashboard"],["Projects"],["knowledge"],["Startup Playbook"],["Calendar & Goals"],["Expenses"],["journal"],["Timeline"],["log"]];
+function show(k){view.innerHTML=pages[k].h;render(k)}
+function render(cur){menu.innerHTML=items.map(([k])=>{const p=pages[k];return `<a class="${k===cur?'on':''}" ${p?`onclick="show('${k}')"`:''}>${p?p.n:k}</a>`}).join('')}
+show('dashboard');
+</script>
+</body>
+</html>

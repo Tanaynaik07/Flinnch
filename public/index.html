@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flinnch — Web · AI · Automation</title>
+<meta name="description" content="Flinnch is a small team building web products, AI features and automation that make businesses run smarter." />
+<link rel="canonical" href="https://flinnch.in/" />
+<meta property="og:title" content="Flinnch — Web · AI · Automation" />
+<meta property="og:description" content="We build web products, AI features and automation that make businesses run smarter." />
+<meta property="og:url" content="https://flinnch.in/" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<!-- Calm moving type background (rows are built in main.js) -->
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="bg-type" id="bg-type" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="logo" href="#top">flinnch.</a>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#lab">AI + Automation</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn-small" href="#contact">Let's talk ↗</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="badge reveal">Available for selected projects</span>
+    <h1 class="reveal" style="--d:0.08s">We build web products <em>that work smarter.</em></h1>
+    <p class="hero-sub reveal" style="--d:0.16s">Web development, AI integration and business automation — brought together to turn ideas and repetitive workflows into useful products.</p>
+    <div class="hero-actions reveal" style="--d:0.24s">
+      <a class="btn" href="#work">See our work ↓</a>
+      <a class="btn btn-outline" href="#contact">Start a project ↗</a>
+    </div>
+    <div class="hero-tags reveal" style="--d:0.32s">
+      <span>Web</span><span>AI</span><span>Automation</span>
+    </div>
+  </section>
+
+  <!-- 01 Capabilities -->
+  <section class="section" id="capabilities">
+    <div class="kicker reveal"><span class="rule"></span>01 / Capabilities</div>
+    <h2 class="reveal" style="--d:0.06s">More than just <em>building websites.</em></h2>
+    <p class="section-sub reveal" style="--d:0.12s">Pick a service to see what it actually looks like as a project.</p>
+    <div class="panel reveal" style="--d:0.18s" id="cap-panel"></div>
+  </section>
+
+  <!-- 02 Work -->
+  <section class="section" id="work">
+    <div class="kicker reveal"><span class="rule"></span>02 / Selected work</div>
+    <h2 class="reveal" style="--d:0.06s">Things we've <em>actually built.</em></h2>
+    <p class="section-sub reveal" style="--d:0.12s">A small selection. Pick a project to see what it does.</p>
+    <div class="panel reveal" style="--d:0.18s" id="work-panel"></div>
+  </section>
+
+  <!-- 03 Lab (full screen) -->
+  <section class="section full" id="lab">
+    <div class="kicker reveal"><span class="rule"></span>03 / AI + Automation Lab</div>
+    <h2 class="reveal wide" style="--d:0.06s">Don't just put AI on the page. <em>Connect it to the workflow.</em></h2>
+    <p class="section-sub reveal" style="--d:0.12s">A look at how a project request moves through this site's own intake flow.</p>
+
+    <div class="lab-flow reveal" style="--d:0.2s" id="lab-flow">
+      <div class="lab-step">
+        <div class="lab-num">01</div>
+        <h3>Visitor</h3>
+        <p>Sends a project request</p>
+      </div>
+      <div class="lab-arrow" aria-hidden="true">→</div>
+      <div class="lab-step">
+        <div class="lab-num">02</div>
+        <h3>Server</h3>
+        <p>Validates and stores it</p>
+      </div>
+      <div class="lab-arrow" aria-hidden="true">→</div>
+      <div class="lab-step">
+        <div class="lab-num">03</div>
+        <h3>Follow-up</h3>
+        <p>Notification and reply</p>
+      </div>
+    </div>
+    <p class="lab-note reveal" style="--d:0.28s">Submit the form in <a href="#contact">Start a project</a> and it runs through this exact path — no fake demo data.</p>
+  </section>
+
+  <!-- 04 About (full screen) -->
+  <section class="section full" id="about">
+    <div class="kicker reveal"><span class="rule"></span>04 / About</div>
+    <h2 class="reveal wide" style="--d:0.06s">Developers first. <em>Problem focused.</em></h2>
+    <p class="about-text reveal" style="--d:0.12s">We're Flinnch, a small team focused on building practical web applications and connecting them with AI and automation where it creates real value.</p>
+    <p class="about-text reveal" style="--d:0.18s">The goal isn't to use every new technology. It's to build the simplest system that solves the problem well.</p>
+    <div class="about-tags reveal" style="--d:0.26s">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>AI APIs</span><span>n8n</span>
+    </div>
+  </section>
+
+  <!-- 05 Contact -->
+  <section class="section" id="contact">
+    <div class="kicker reveal"><span class="rule"></span>05 / Start a project</div>
+    <h2 class="reveal" style="--d:0.06s">Have a problem <em>worth building around?</em></h2>
+    <p class="section-sub reveal" style="--d:0.12s">Tell us what you're trying to build, automate or improve.</p>
+
+    <form id="contact-form" class="contact-form reveal" style="--d:0.18s">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="field">
+        <label for="message">What are you trying to build?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send ↗</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+
+    <p class="prefer-email reveal" style="--d:0.24s">Prefer email? Reach us directly at <a href="mailto:flinnch.team@gmail.com">flinnch.team@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Flinnch — <a href="https://flinnch.in">flinnch.in</a> · Web · AI · Automation</p>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
